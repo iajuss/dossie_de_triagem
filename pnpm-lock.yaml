@@ -35,16 +35,16 @@ importers:
 
   apps/web:
     dependencies:
-      '@panella/adapters':
+      '@dossie/adapters':
         specifier: workspace:*
         version: link:../../packages/adapters
-      '@panella/application':
+      '@dossie/application':
         specifier: workspace:*
         version: link:../../packages/application
-      '@panella/contracts':
+      '@dossie/contracts':
         specifier: workspace:*
         version: link:../../packages/contracts
-      '@panella/domain':
+      '@dossie/domain':
         specifier: workspace:*
         version: link:../../packages/domain
     devDependencies:
@@ -56,10 +56,10 @@ importers:
 
   packages/adapters:
     dependencies:
-      '@panella/application':
+      '@dossie/application':
         specifier: workspace:*
         version: link:../application
-      '@panella/domain':
+      '@dossie/domain':
         specifier: workspace:*
         version: link:../domain
       '@prisma/client':
@@ -71,19 +71,19 @@ importers:
 
   packages/application:
     dependencies:
-      '@panella/adapters':
+      '@dossie/adapters':
         specifier: workspace:*
         version: link:../adapters
-      '@panella/contracts':
+      '@dossie/contracts':
         specifier: workspace:*
         version: link:../contracts
-      '@panella/domain':
+      '@dossie/domain':
         specifier: workspace:*
         version: link:../domain
 
   packages/contracts:
     dependencies:
-      '@panella/domain':
+      '@dossie/domain':
         specifier: workspace:*
         version: link:../domain
       zod:

@@ -12,7 +12,7 @@ import {
   type RawObservation,
   type TenantContext,
   type WalletGrant,
-} from "@panella/domain";
+} from "@dossie/domain";
 
 import {
   lookupDossier,

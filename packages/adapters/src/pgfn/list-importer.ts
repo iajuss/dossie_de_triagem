@@ -1,4 +1,4 @@
-import { normalizeSourceMoney, type SourceMoney } from "@panella/domain";
+import { normalizeSourceMoney, type SourceMoney } from "@dossie/domain";
 
 import {
   readWorkbookGrid,

@@ -6,8 +6,8 @@ import {
   type PolicyClassification,
   type PolicyDefinition,
   type SourcePlan,
-} from "@panella/domain";
-import { LookupDossierRequestSchema } from "@panella/contracts";
+} from "@dossie/domain";
+import { LookupDossierRequestSchema } from "@dossie/contracts";
 
 import {
   authorizeOperation,

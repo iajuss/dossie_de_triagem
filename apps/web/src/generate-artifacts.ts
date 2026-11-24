@@ -1,4 +1,4 @@
-import { writeArtifacts } from "@panella/contracts";
+import { writeArtifacts } from "@dossie/contracts";
 
 import { GENERATED_ARTIFACTS } from "./generated-artifacts.js";
 

@@ -2,7 +2,7 @@ import type {
   DossierFieldEnvelope,
   DossierSnapshot,
   PolicyClassification,
-} from "@panella/domain";
+} from "@dossie/domain";
 
 /**
  * The prompt projection. The consumer of this product is an AI agent, so this

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { pgfnOpenDataSliceId, type RawObservation } from "@panella/domain";
+import { pgfnOpenDataSliceId, type RawObservation } from "@dossie/domain";
 
 import { buildPgfnManifest } from "../pgfn/manifest.js";
 import type { PgfnInscription } from "../pgfn/open-data-worker.js";

@@ -9,7 +9,7 @@ import {
   type RawObservation,
   type SourceName,
   type SourcePlan,
-} from "@panella/domain";
+} from "@dossie/domain";
 
 import {
   authorizeOperation,

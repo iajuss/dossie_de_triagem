@@ -4,7 +4,7 @@ import {
   authorizeOperation,
   type AuthorizedOperation,
   type WalletAuthorizationRepository,
-} from "@panella/application";
+} from "@dossie/application";
 import {
   DevInsecureIdentityProvider,
   type VerifiedPrincipal,

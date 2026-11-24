@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { POLICY_2026_07_B } from "@panella/domain";
+import { POLICY_2026_07_B } from "@dossie/domain";
 
 import { buildWalletQueue } from "./list-wallet-queue.js";
 import type { OperationPrincipal, AuthorizedOperation } from "./authorize-actor.js";

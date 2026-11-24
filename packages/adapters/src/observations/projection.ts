@@ -10,7 +10,7 @@ import {
   type PublishedSubject,
   type RawObservation,
   type SourceStatus,
-} from "@panella/domain";
+} from "@dossie/domain";
 
 import type { PgfnCoverageManifest, PgfnSystem } from "../pgfn/manifest.js";
 import { PGFN_REQUIRED_SYSTEMS } from "../pgfn/manifest.js";

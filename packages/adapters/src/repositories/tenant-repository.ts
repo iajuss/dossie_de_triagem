@@ -1,11 +1,11 @@
 import {
   assertAuthorizedOperation,
   type AuthorizedOperation,
-} from "@panella/application";
+} from "@dossie/application";
 import {
   assertTenantContext,
   type TenantContext,
-} from "@panella/domain";
+} from "@dossie/domain";
 
 import {
   assertAuthenticatedIdentity,

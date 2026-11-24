@@ -34,7 +34,7 @@ export default tseslint.config(
                 "Raw Prisma is private to packages/adapters/src/repositories.",
             },
             {
-              name: "@panella/domain",
+              name: "@dossie/domain",
               importNames: ["issueAuthenticatedActor"],
               message:
                 "Only the verified Keycloak adapter may issue a runtime-authenticated actor.",

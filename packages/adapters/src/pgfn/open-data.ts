@@ -1,4 +1,4 @@
-import { Money, normalizeSpreadsheetMoney } from "@panella/domain";
+import { Money, normalizeSpreadsheetMoney } from "@dossie/domain";
 
 /**
  * One published Dados Abertos part. The column names follow the published

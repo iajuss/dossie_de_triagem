@@ -341,7 +341,7 @@ conferência e a linha em quarentena, e pule a confirmação.
 | Sintoma | Causa provável | O que fazer |
 |---|---|---|
 | `pnpm demo` falha com `EADDRINUSE` | Já existe uma demonstração na porta 3000 | `PORT=3001 pnpm demo`, e troque a porta nas URLs |
-| `Cannot find package '@panella/domain'` | Defeito de ambiente E-1: o serviço `workspace-dependencies` do Compose reescreveu `packages/*/node_modules` | Apague `packages/*/node_modules`, rode `pnpm install --frozen-lockfile` e depois `pnpm exec prisma generate` |
+| `Cannot find package '@dossie/domain'` | Defeito de ambiente E-1: o serviço `workspace-dependencies` do Compose reescreveu `packages/*/node_modules` | Apague `packages/*/node_modules`, rode `pnpm install --frozen-lockfile` e depois `pnpm exec prisma generate` |
 | `typecheck` acusa `implicitly has an 'any' type` | Defeito de ambiente E-2: o Prisma Client não está gerado | `pnpm exec prisma generate` |
 | A tela devolve 500 `TEMA_NAO_CONFIGURADO` | O tenant não tem tema, e não existe padrão embutido | Rode `pnpm demo` de novo: ele semeia o tema do tenant |
 | O navegador devolve 401 numa rota `/api/` | Barra de endereço não manda cabeçalho `Authorization` | Use a linha de comando; só as **telas** pedem credencial ao navegador |

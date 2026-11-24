@@ -1,5 +1,5 @@
 {
-  "name": "@panella/adapters",
+  "name": "@dossie/adapters",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,8 +11,8 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@panella/application": "workspace:*",
-    "@panella/domain": "workspace:*",
+    "@dossie/application": "workspace:*",
+    "@dossie/domain": "workspace:*",
     "@prisma/client": "6.19.0",
     "zod": "4.1.12"
   }

@@ -1,8 +1,8 @@
 import {
   assertAuthenticatedIdentity,
   type AuthenticatedIdentity,
-} from "@panella/adapters/keycloak";
-import type { VerifiedPrincipal } from "@panella/adapters/identity-middleware";
+} from "@dossie/adapters/keycloak";
+import type { VerifiedPrincipal } from "@dossie/adapters/identity-middleware";
 import {
   authorize,
   createTenantContext,
@@ -10,7 +10,7 @@ import {
   type AuthorizationDecision,
   type TenantContext,
   type WalletGrant,
-} from "@panella/domain";
+} from "@dossie/domain";
 
 export type OperationPrincipal = VerifiedPrincipal;
 export type AuthenticatedOperationIdentity = AuthenticatedIdentity;

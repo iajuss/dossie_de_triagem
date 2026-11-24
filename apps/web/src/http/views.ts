@@ -2,12 +2,12 @@ import {
   formatBrlFromCents,
   formatIsoDate,
   type RoleDossierView,
-} from "@panella/contracts";
+} from "@dossie/contracts";
 import type {
   PriorityEntry,
   WalletImportPreview,
   WalletImportReport,
-} from "@panella/application";
+} from "@dossie/application";
 
 import { WALLET_COLUMNS } from "../../../../packages/adapters/src/wallet-importers/columns.js";
 

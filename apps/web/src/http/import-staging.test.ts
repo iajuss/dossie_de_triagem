@@ -10,8 +10,8 @@ import {
   type AuthorizedOperation,
   type AuthorizedWalletContext,
   type WalletAuthorizationRepository,
-} from "@panella/application";
-import type { WalletGrant } from "@panella/domain";
+} from "@dossie/application";
+import type { WalletGrant } from "@dossie/domain";
 
 import { createInMemoryImportStaging } from "./import-staging.js";
 

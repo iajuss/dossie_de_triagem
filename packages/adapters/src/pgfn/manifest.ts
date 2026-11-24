@@ -1,4 +1,4 @@
-import type { SourceStatus } from "@panella/domain";
+import type { SourceStatus } from "@dossie/domain";
 
 /**
  * Dados Abertos is published in three systems. A query that read one of them

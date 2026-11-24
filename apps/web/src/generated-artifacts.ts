@@ -1,4 +1,4 @@
-import { CONTRACT_ARTIFACTS, type GeneratedArtifact } from "@panella/contracts";
+import { CONTRACT_ARTIFACTS, type GeneratedArtifact } from "@dossie/contracts";
 
 import { exampleWalletCsv } from "../../../packages/adapters/src/wallet-importers/columns.js";
 

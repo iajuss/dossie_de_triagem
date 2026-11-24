@@ -7,7 +7,7 @@ import {
   type QuarantineReason,
   type QuarantinedTitleRow,
   type RawTitleRow,
-} from "@panella/domain";
+} from "@dossie/domain";
 
 import type { AuthenticatedOperationIdentity } from "./authorize-actor.js";
 import {

@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 
-import { isMaskCompatibleWithCpf, type SourceStatus } from "@panella/domain";
+import { isMaskCompatibleWithCpf, type SourceStatus } from "@dossie/domain";
 
 import {
   PGFN_REQUIRED_SYSTEMS,

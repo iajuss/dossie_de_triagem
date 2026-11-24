@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import type { RawObservation } from "@panella/domain";
+import type { RawObservation } from "@dossie/domain";
 
 import { toRawObservation, toStoredObservation } from "./storage.js";
 

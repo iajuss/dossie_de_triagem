@@ -4,7 +4,7 @@ import {
   type Actor,
   type ActorKind,
   type HumanRole,
-} from "@panella/domain";
+} from "@dossie/domain";
 import { z } from "zod";
 
 import {

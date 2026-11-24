@@ -1,4 +1,4 @@
-import type { RawTitleRow } from "@panella/domain";
+import type { RawTitleRow } from "@dossie/domain";
 
 /**
  * What a wallet file must contain, declared once.

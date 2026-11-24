@@ -1,6 +1,6 @@
 import { randomUUID } from "node:crypto";
 
-import type { AuthorizedOperation } from "@panella/application";
+import type { AuthorizedOperation } from "@dossie/application";
 
 import { assertWalletImportOperation } from "../../../../packages/adapters/src/repositories/tenant-repository.js";
 

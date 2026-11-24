@@ -7,7 +7,7 @@ import {
   type RawObservation,
   type SourceName,
   type SourceStatus,
-} from "@panella/domain";
+} from "@dossie/domain";
 
 import type { StoredObservation } from "../repositories/prisma-wallet-repository.js";
 

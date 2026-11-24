@@ -1,4 +1,4 @@
-// Relative, not `@panella/domain`: this directory is outside every workspace
+// Relative, not `@dossie/domain`: this directory is outside every workspace
 // package, so the alias does not resolve here.
 import {
   composeDossier,

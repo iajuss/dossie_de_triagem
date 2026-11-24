@@ -71,7 +71,7 @@ describe.each(GENERATED_ARTIFACTS.map((artifact) => [artifact.path, artifact] as
 describe("the list itself", () => {
   it("covers every artefact the contract generator writes", async () => {
     // The generator declares what it writes; this list must not fall behind.
-    const { CONTRACT_ARTIFACTS } = await import("@panella/contracts");
+    const { CONTRACT_ARTIFACTS } = await import("@dossie/contracts");
     const listed = new Set(GENERATED_ARTIFACTS.map((artifact) => artifact.path));
 
     for (const artifact of CONTRACT_ARTIFACTS) {

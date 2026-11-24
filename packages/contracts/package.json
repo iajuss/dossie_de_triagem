@@ -1,5 +1,5 @@
 {
-  "name": "@panella/contracts",
+  "name": "@dossie/contracts",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,7 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@panella/domain": "workspace:*",
+    "@dossie/domain": "workspace:*",
     "zod": "4.1.12"
   },
   "devDependencies": {

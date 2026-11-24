@@ -7,7 +7,7 @@ import {
   type AuthenticatedIdentity,
   type IdentityActorRepository,
 } from "../../adapters/src/keycloak.js";
-import type { TenantContext, WalletGrant } from "@panella/domain";
+import type { TenantContext, WalletGrant } from "@dossie/domain";
 
 import {
   assertAuthorizedOperation,

@@ -12,7 +12,7 @@ import {
   type SourcePlan,
   type TenantContext,
   type WalletGrant,
-} from "@panella/domain";
+} from "@dossie/domain";
 import {
   authorizeOperation,
   commitWalletImport,
@@ -22,7 +22,7 @@ import {
   type PriorityEntry,
   type WalletAuthorizationRepository,
   type WalletFileParser,
-} from "@panella/application";
+} from "@dossie/application";
 
 import { DevInsecureIdentityProvider } from "../../../../packages/adapters/src/identity-middleware.js";
 import {

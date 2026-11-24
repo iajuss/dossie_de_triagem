@@ -1,4 +1,4 @@
-import type { RawTitleRow } from "@panella/domain";
+import type { RawTitleRow } from "@dossie/domain";
 
 /**
  * A parser's whole job: bytes to text cells plus the line the operator will

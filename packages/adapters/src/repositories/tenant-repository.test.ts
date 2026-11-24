@@ -5,7 +5,7 @@ import {
   type AuthorizedWalletContext,
   type AuthorizedOperation,
   type WalletAuthorizationRepository,
-} from "@panella/application";
+} from "@dossie/application";
 import {
   DevInsecureIdentityProvider,
 } from "../identity-middleware.js";
@@ -13,7 +13,7 @@ import {
   mapVerifiedKeycloakActor,
   type IdentityActorRepository,
 } from "../keycloak.js";
-import type { TenantContext, WalletGrant } from "@panella/domain";
+import type { TenantContext, WalletGrant } from "@dossie/domain";
 
 import {
   InMemoryTenantScopedRepository,

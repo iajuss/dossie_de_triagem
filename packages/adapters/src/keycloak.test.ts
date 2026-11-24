@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 
-import * as domain from "@panella/domain";
+import * as domain from "@dossie/domain";
 
 import {
   DevInsecureIdentityProvider,

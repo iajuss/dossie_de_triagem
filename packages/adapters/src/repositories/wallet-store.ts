@@ -1,4 +1,4 @@
-import type { AuthorizedOperation } from "@panella/application";
+import type { AuthorizedOperation } from "@dossie/application";
 
 import type { VerifiedPrincipal } from "../identity-middleware.js";
 import { createInMemoryCpfCrypto, type CpfCryptoService } from "../kms.js";
