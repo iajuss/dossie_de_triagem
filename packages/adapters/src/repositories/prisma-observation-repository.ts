@@ -217,7 +217,7 @@ export class PrismaAuthorizedObservationRepository {
 
   public async save(
     principal: import("../identity-middleware.js").VerifiedPrincipal,
-    operation: import("@panella/application").AuthorizedOperation,
+    operation: import("@dossie/application").AuthorizedOperation,
     value: ObservationPersistenceRecord,
   ): Promise<void> {
     assertFactoryIssuedRepository(this);
@@ -226,7 +226,7 @@ export class PrismaAuthorizedObservationRepository {
 
   public async find(
     principal: import("../identity-middleware.js").VerifiedPrincipal,
-    operation: import("@panella/application").AuthorizedOperation,
+    operation: import("@dossie/application").AuthorizedOperation,
     id: string,
   ): Promise<ObservationPersistenceRecord | null> {
     assertFactoryIssuedRepository(this);

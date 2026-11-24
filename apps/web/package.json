@@ -1,5 +1,5 @@
 {
-  "name": "@panella/web",
+  "name": "@dossie/web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +10,10 @@
     "generate:artifacts": "tsx src/generate-artifacts.ts"
   },
   "dependencies": {
-    "@panella/adapters": "workspace:*",
-    "@panella/application": "workspace:*",
-    "@panella/contracts": "workspace:*",
-    "@panella/domain": "workspace:*"
+    "@dossie/adapters": "workspace:*",
+    "@dossie/application": "workspace:*",
+    "@dossie/contracts": "workspace:*",
+    "@dossie/domain": "workspace:*"
   },
   "devDependencies": {
     "tsx": "4.20.6"

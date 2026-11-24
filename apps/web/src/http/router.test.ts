@@ -12,12 +12,12 @@ import {
   type DossierSnapshot,
   type TenantContext,
   type WalletGrant,
-} from "@panella/domain";
+} from "@dossie/domain";
 import type {
   AuthorizedOperation,
   OperationPrincipal,
   WalletAuthorizationRepository,
-} from "@panella/application";
+} from "@dossie/application";
 
 import { parseWalletFile } from "../../../../packages/adapters/src/wallet-importers/wallet-file.js";
 

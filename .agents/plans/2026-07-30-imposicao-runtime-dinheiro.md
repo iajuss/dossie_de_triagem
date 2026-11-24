@@ -46,7 +46,7 @@ decimal, with a comment explaining the 100× call-site risk.
 
 - [ ] **Step 2: Run red tests**
 
-Run: `pnpm --filter @panella/domain test -- money && pnpm --filter @panella/contracts test -- schema-compatibility`
+Run: `pnpm --filter @dossie/domain test -- money && pnpm --filter @dossie/contracts test -- schema-compatibility`
 
 Expected: the old decimal grammar accepts a non-canonical input or the schema
 does not return `Money` after a serialized-centavos parse.
@@ -127,7 +127,7 @@ public boundary assertion. Preserve factory and serialized-centavos behavior.
 
 - [x] **Step 2: Run red tests**
 
-Run: `pnpm --filter @panella/domain test -- money`
+Run: `pnpm --filter @dossie/domain test -- money`
 
 Expected: the current exported class remains constructible from JavaScript or
 the forged object passes the boundary assertion.

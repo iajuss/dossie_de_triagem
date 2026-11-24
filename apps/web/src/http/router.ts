@@ -5,14 +5,14 @@ import {
   type AuthorizationAction,
   type DossierSnapshot,
   type SourcePlan,
-} from "@panella/domain";
+} from "@dossie/domain";
 import {
   ListPrioritiesRequestSchema,
   projectDossierForRole,
   renderPrompt,
   toClassificationContract,
   type ViewAudience,
-} from "@panella/contracts";
+} from "@dossie/contracts";
 import {
   authorizeOperation,
   commitWalletImport,
@@ -30,7 +30,7 @@ import {
   type WalletFileParser,
   type WalletImportStore,
   type WalletTitleLookup,
-} from "@panella/application";
+} from "@dossie/application";
 
 import { exampleWalletCsv } from "../../../../packages/adapters/src/wallet-importers/columns.js";
 

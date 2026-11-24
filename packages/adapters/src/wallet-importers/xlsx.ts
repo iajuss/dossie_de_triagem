@@ -1,4 +1,4 @@
-import type { RawTitleRow } from "@panella/domain";
+import type { RawTitleRow } from "@dossie/domain";
 
 import { mapWalletColumns, type WalletColumnKey } from "./columns.js";
 import type { ParsedWalletFile, ParsedWalletRow } from "./parsed-file.js";

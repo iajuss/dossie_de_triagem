@@ -5,7 +5,7 @@ import {
   type LinkStatus,
   type PolicyClassification,
   type SourceStatus,
-} from "@panella/domain";
+} from "@dossie/domain";
 
 import { formatBrlFromCents, formatIsoDate, formatIsoDateTime } from "./format.js";
 

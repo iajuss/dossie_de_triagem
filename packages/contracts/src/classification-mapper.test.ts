@@ -4,7 +4,7 @@ import {
   evaluatePolicy,
   POLICY_2026_07_B,
   type DossierSnapshot,
-} from "@panella/domain";
+} from "@dossie/domain";
 
 import { dossierFrom } from "../../../fixtures/policy/dossiers.js";
 import { ClassificationSchema } from "./classification-schema.js";

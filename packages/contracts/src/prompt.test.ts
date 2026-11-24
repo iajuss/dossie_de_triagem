@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { evaluatePolicy, POLICY_2026_07_B } from "@panella/domain";
+import { evaluatePolicy, POLICY_2026_07_B } from "@dossie/domain";
 
 import { dossierFrom } from "../../../fixtures/policy/dossiers.js";
 import { renderPrompt, PROMPT_VERSION } from "./prompt.js";

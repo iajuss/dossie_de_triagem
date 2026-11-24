@@ -9,14 +9,14 @@ import {
 } from "../../../../packages/adapters/src/keycloak.js";
 import { parseWalletFile } from "../../../../packages/adapters/src/wallet-importers/wallet-file.js";
 import { WALLET_COLUMNS } from "../../../../packages/adapters/src/wallet-importers/columns.js";
-import { sourcePlanForUfs, type WalletGrant } from "@panella/domain";
+import { sourcePlanForUfs, type WalletGrant } from "@dossie/domain";
 import type {
   AuthorizedWalletContext,
   ImportedTitleRecord,
   WalletAuthorizationRepository,
   WalletImportAuditEntry,
   WalletImportStore,
-} from "@panella/application";
+} from "@dossie/application";
 
 import { createInMemoryImportStaging } from "./import-staging.js";
 import { createRouter, type HttpRequest } from "./router.js";

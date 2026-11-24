@@ -135,19 +135,19 @@ describe("domain package", () => {
 
 - [ ] **Step 2: Run it to verify the workspace is not yet configured**
 
-Run: `pnpm --filter @panella/domain test`
+Run: `pnpm --filter @dossie/domain test`
 
 Expected: command fails because the package and test runner do not exist.
 
 - [ ] **Step 3: Create the workspace and Docker Compose services**
 
-Create pnpm packages named `@panella/web`, `@panella/worker`, `@panella/domain`, `@panella/contracts`, `@panella/application` and `@panella/adapters`. Compose must start PostgreSQL, Keycloak, web and worker services; `.gitignore` must ignore `.env`, generated artifacts, raw source downloads and `lista-devedores-pgfn-*.xlsx`.
+Create pnpm packages named `@dossie/web`, `@dossie/worker`, `@dossie/domain`, `@dossie/contracts`, `@dossie/application` and `@dossie/adapters`. Compose must start PostgreSQL, Keycloak, web and worker services; `.gitignore` must ignore `.env`, generated artifacts, raw source downloads and `lista-devedores-pgfn-*.xlsx`.
 
 Write `docs/fontes.md` with one row each for CENPROT, PGFN Dados Abertos, Lista PGFN, QSA/RFB, Portal Transparência, DataJud, Serasa, Boa Vista and Quod. Mark only PGFN Dados Abertos, Lista PGFN manual, QSA/RFB and CEIS/CEAF as planned integration paths; state “não verificado” where a contract was not confirmed.
 
 - [ ] **Step 4: Run local checks**
 
-Run: `pnpm --filter @panella/domain test && pnpm lint && pnpm typecheck`
+Run: `pnpm --filter @dossie/domain test && pnpm lint && pnpm typecheck`
 
 Expected: smoke test passes, lint and TypeScript strict mode pass.
 
@@ -184,7 +184,7 @@ it("does not collapse source states", () => {
 
 - [ ] **Step 2: Run the tests and contract generator before implementation**
 
-Run: `pnpm --filter @panella/domain test -- money source-status && pnpm --filter @panella/contracts test -- schema-compatibility`
+Run: `pnpm --filter @dossie/domain test -- money source-status && pnpm --filter @dossie/contracts test -- schema-compatibility`
 
 Expected: failures because primitives and generated contracts do not exist.
 
@@ -250,7 +250,7 @@ it("rejects ciphertext copied to another tenant or debtor", async () => {
 
 - [ ] **Step 2: Run them before persistence exists**
 
-Run: `pnpm --filter @panella/domain test authorization && pnpm --filter @panella/adapters test kms`
+Run: `pnpm --filter @dossie/domain test authorization && pnpm --filter @dossie/adapters test kms`
 
 Expected: failures because policy and key interfaces do not exist.
 
@@ -297,7 +297,7 @@ it("quarantines an invalid CPF while importing valid rows", async () => {
 
 - [ ] **Step 2: Run tests before parsers exist**
 
-Run: `pnpm --filter @panella/application test import-wallet`
+Run: `pnpm --filter @dossie/application test import-wallet`
 
 Expected: failures because importer ports and parsers do not exist.
 
@@ -341,7 +341,7 @@ it.each([
 
 - [ ] **Step 2: Run resolver tests before implementation**
 
-Run: `pnpm --filter @panella/domain test resolver`
+Run: `pnpm --filter @dossie/domain test resolver`
 
 Expected: failures because resolver and named rules do not exist.
 
@@ -351,7 +351,7 @@ Normalize accents/case/tokens, evaluate mask compatibility in memory, token posi
 
 - [ ] **Step 4: Verify confidence propagation inputs**
 
-Run: `pnpm --filter @panella/domain test resolver && pnpm typecheck`
+Run: `pnpm --filter @dossie/domain test resolver && pnpm typecheck`
 
 Expected: compatible mask plus divergent name is not confirmed; low-confidence result carries evidence rather than a fact claim.
 
@@ -387,7 +387,7 @@ it("keeps embedded dossie fields after its observation is purged", () => {
 
 - [ ] **Step 2: Run tests before composition exists**
 
-Run: `pnpm --filter @panella/application test compose-dossier`
+Run: `pnpm --filter @dossie/application test compose-dossier`
 
 Expected: failures because source planning, composition and snapshot storage do not exist.
 
@@ -474,7 +474,7 @@ it("does not use a low-confidence record as a negative fact", () => {
 
 - [ ] **Step 2: Run policy tests before evaluator exists**
 
-Run: `pnpm --filter @panella/domain test evaluate sensitivity distribution`
+Run: `pnpm --filter @dossie/domain test evaluate sensitivity distribution`
 
 Expected: failures because policy types and evaluator do not exist.
 
@@ -519,7 +519,7 @@ it("keeps a filtered manual list as a separate scoped observation", () => {
 
 - [ ] **Step 2: Run the tests before adapters exist**
 
-Run: `pnpm --filter @panella/adapters test pgfn`
+Run: `pnpm --filter @dossie/adapters test pgfn`
 
 Expected: failures because PGFN parsers and manifests do not exist.
 
@@ -564,7 +564,7 @@ it("does not persist a QSA row for a non-client", async () => {
 
 - [ ] **Step 2: Run tests before workers exist**
 
-Run: `pnpm --filter @panella/adapters test qsa portal`
+Run: `pnpm --filter @dossie/adapters test qsa portal`
 
 Expected: failures because QSA streaming and Portal adapter do not exist.
 
@@ -610,7 +610,7 @@ it("rejects a review request from a public actor", () => {
 
 - [ ] **Step 2: Run tests before implementation**
 
-Run: `pnpm --filter @panella/application test purge-expired review-request`
+Run: `pnpm --filter @dossie/application test purge-expired review-request`
 
 Expected: failures because retention execution and review gate do not exist.
 
@@ -654,7 +654,7 @@ it("does not accept CPF as a lookup parameter", async () => {
 
 - [ ] **Step 2: Run tests before routes exist**
 
-Run: `pnpm --filter @panella/contracts test prompt && pnpm --filter @panella/web test api-contract`
+Run: `pnpm --filter @dossie/contracts test prompt && pnpm --filter @dossie/web test api-contract`
 
 Expected: failures because handlers and prompt renderer do not exist.
 
@@ -700,7 +700,7 @@ it("runs purge as a worker command, not a web request", async () => {
 
 - [ ] **Step 2: Run tests before UI and worker entrypoint exist**
 
-Run: `pnpm --filter @panella/web test ui-access && pnpm --filter @panella/worker test`
+Run: `pnpm --filter @dossie/web test ui-access && pnpm --filter @dossie/worker test`
 
 Expected: failures because pages, theme and worker command dispatcher do not exist.
 

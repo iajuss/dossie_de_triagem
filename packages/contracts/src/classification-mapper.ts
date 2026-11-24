@@ -1,4 +1,4 @@
-import type { PolicyClassification } from "@panella/domain";
+import type { PolicyClassification } from "@dossie/domain";
 
 import type { Classification } from "./classification-schema.js";
 

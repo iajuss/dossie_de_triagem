@@ -1,7 +1,7 @@
 import type { AddressInfo } from "node:net";
 
-import { buildWalletQueue } from "@panella/application";
-import { evaluatePolicy, POLICY_2026_07_B } from "@panella/domain";
+import { buildWalletQueue } from "@dossie/application";
+import { evaluatePolicy, POLICY_2026_07_B } from "@dossie/domain";
 
 import { parseWalletFile } from "../../../../packages/adapters/src/wallet-importers/wallet-file.js";
 

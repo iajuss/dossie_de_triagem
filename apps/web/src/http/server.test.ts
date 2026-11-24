@@ -12,8 +12,8 @@ import {
   sourcePlanForUfs,
   type TenantContext,
   type WalletGrant,
-} from "@panella/domain";
-import type { WalletAuthorizationRepository } from "@panella/application";
+} from "@dossie/domain";
+import type { WalletAuthorizationRepository } from "@dossie/application";
 
 import { parseWalletFile } from "../../../../packages/adapters/src/wallet-importers/wallet-file.js";
 

@@ -10,8 +10,8 @@ import {
   authorizeOperation,
   type WalletAuthorizationRepository,
   type WalletFileParser,
-} from "@panella/application";
-import type { TenantContext, WalletGrant } from "@panella/domain";
+} from "@dossie/application";
+import type { TenantContext, WalletGrant } from "@dossie/domain";
 
 import { DevInsecureIdentityProvider } from "../identity-middleware.js";
 import {

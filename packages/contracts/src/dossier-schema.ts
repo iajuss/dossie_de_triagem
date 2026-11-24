@@ -1,4 +1,4 @@
-import { SerializedCentsSchema, SourceStatusSchema } from "@panella/domain";
+import { SerializedCentsSchema, SourceStatusSchema } from "@dossie/domain";
 import { z } from "zod";
 
 const SemanticVersionSchema = z.string().regex(/^\d+\.\d+\.\d+$/, "SEMVER_REQUIRED");

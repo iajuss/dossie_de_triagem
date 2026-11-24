@@ -2,7 +2,7 @@ import {
   POLICY_2026_07_B,
   type PolicyCategory,
   type PolicyDefinition,
-} from "@panella/domain";
+} from "@dossie/domain";
 
 import type {
   AuthorizedOperation,

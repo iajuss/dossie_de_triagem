@@ -129,7 +129,7 @@ describe("the example file an operator downloads first", () => {
   it("parses, and yields three accepted rows and one quarantined", async () => {
     // The file exists to be tried. If it stopped importing cleanly it would
     // teach the wrong lesson on the first attempt.
-    const { previewWalletImport } = await import("@panella/application");
+    const { previewWalletImport } = await import("@dossie/application");
     const preview = previewWalletImport(
       Buffer.from(exampleWalletCsv(), "utf8"),
       { parse: (bytes) => parseWalletCsv(bytes) },
@@ -142,7 +142,7 @@ describe("the example file an operator downloads first", () => {
   });
 
   it("shows two titles of one debtor, so a line reads as a debt", async () => {
-    const { previewWalletImport } = await import("@panella/application");
+    const { previewWalletImport } = await import("@dossie/application");
     const preview = previewWalletImport(
       Buffer.from(exampleWalletCsv(), "utf8"),
       { parse: (bytes) => parseWalletCsv(bytes) },
@@ -154,7 +154,7 @@ describe("the example file an operator downloads first", () => {
   });
 
   it("exercises both accepted date forms", async () => {
-    const { previewWalletImport } = await import("@panella/application");
+    const { previewWalletImport } = await import("@dossie/application");
     const preview = previewWalletImport(
       Buffer.from(exampleWalletCsv(), "utf8"),
       { parse: (bytes) => parseWalletCsv(bytes) },

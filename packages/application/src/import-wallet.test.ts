@@ -13,7 +13,7 @@ import {
   createInMemoryWalletStore,
   type InMemoryWalletStore,
 } from "../../adapters/src/repositories/wallet-store.js";
-import type { TenantContext, WalletGrant } from "@panella/domain";
+import type { TenantContext, WalletGrant } from "@dossie/domain";
 
 import {
   commitWalletImport,

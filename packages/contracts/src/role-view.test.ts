@@ -4,7 +4,7 @@ import {
   evaluatePolicy,
   POLICY_2026_07_B,
   type HumanRole,
-} from "@panella/domain";
+} from "@dossie/domain";
 
 import { dossierFrom, type DossierSpec } from "../../../fixtures/policy/dossiers.js";
 import { projectDossierForRole, type AuditTrailEntry } from "./role-view.js";

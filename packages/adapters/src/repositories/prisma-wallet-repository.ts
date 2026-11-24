@@ -1,6 +1,6 @@
 import { Prisma, PrismaClient, type SourceStatus } from "@prisma/client";
 
-import type { AuthorizedOperation } from "@panella/application";
+import type { AuthorizedOperation } from "@dossie/application";
 
 import type { VerifiedPrincipal } from "../identity-middleware.js";
 import type { CpfCryptoService } from "../kms.js";
